@@ -1,6 +1,32 @@
 {
-  "categories": ["productivity", "code-quality", "workflow"],
-  "keywords": ["compound-engineering", "code-review", "session-management", "memory", "audit", "quality"],
-  "screenshots": [],
-  "featured": false
+  "name": "augmented-engineering",
+  "owner": {
+    "name": "Brooks Johnson"
+  },
+  "metadata": {
+    "description": "Implements compound engineering principles for Claude Code — session summaries, memory consolidation, multi-perspective code reviews, and system audits.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "augmented-engineering",
+      "source": ".",
+      "description": "Session management, memory consolidation, 8-lens code review, and system auditing. Implements compound engineering principles so every session leaves your tools better than you found them.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Brooks Johnson"
+      },
+      "homepage": "https://github.com/Augmented-Dev72/augmented-engineering",
+      "license": "MIT",
+      "keywords": [
+        "augmented-engineering",
+        "compound-engineering",
+        "code-review",
+        "session-management",
+        "memory",
+        "audit"
+      ],
+      "category": "productivity"
+    }
+  ]
 }
