@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Compound engineering practices for Claude Code — session summaries, memory consolidation, multi-perspective code reviews, and system audits. Every session leaves your tools better than you found them.",
   "author": "Brooks Johnson",
-  "homepage": "https://github.com/augmented-dev/compound-engineering",
+  "homepage": "https://github.com/Augmented-Dev72/compound-engineering",
   "license": "MIT",
   "engines": {
     "claude-code": ">=1.0.0"

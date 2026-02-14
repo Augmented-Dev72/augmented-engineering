@@ -4,24 +4,24 @@ A Claude Code plugin for **compound engineering** — the practice of making eve
 
 Most engineering work generates implicit knowledge that evaporates between sessions: patterns discovered during debugging, architectural decisions made in conversation, workflows repeated manually because nobody wrote them down. Compound engineering captures that knowledge systematically. Each session ends with a structured review that identifies what should be encoded into docs, skills, hooks, or agent instructions — so the next session starts from a higher baseline.
 
-This plugin provides the session management, memory consolidation, code review, and auditing workflows that make compound engineering practical. It extends the [superpowers](https://github.com/augmented-dev/superpowers) plugin with four skills and four hooks.
+This plugin provides the session management, memory consolidation, code review, and auditing workflows that make compound engineering practical. It extends the [superpowers](https://github.com/Augmented-Dev72/superpowers) plugin with four skills and four hooks.
 
 ## Prerequisites
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) >= 1.0.0
-- [superpowers plugin](https://github.com/augmented-dev/superpowers) (peer dependency — provides TDD, debugging, and brainstorming skills)
+- [superpowers plugin](https://github.com/Augmented-Dev72/superpowers) (peer dependency — provides TDD, debugging, and brainstorming skills)
 - `jq` (recommended — required for `.compound.json` config; hooks degrade gracefully without it)
 
 ## Installation
 
 ```bash
-claude plugin add augmented-dev/compound-engineering
+claude plugin add Augmented-Dev72/compound-engineering
 ```
 
 Or clone manually:
 
 ```bash
-git clone https://github.com/augmented-dev/compound-engineering.git ~/.claude/plugins/compound-engineering
+git clone https://github.com/Augmented-Dev72/compound-engineering.git ~/.claude/plugins/compound-engineering
 ```
 
 ## What's Included
@@ -123,7 +123,7 @@ The plugin reads project-specific configuration from `.compound.json` in your pr
 
 ## Project Template
 
-For a full project setup with `.compound.json`, example CLAUDE.md, session directory structure, and recommended `.gitignore` entries, see the [compound-engineering-template](https://github.com/augmented-dev/compound-engineering-template) repo.
+For a full project setup with `.compound.json`, example CLAUDE.md, session directory structure, and recommended `.gitignore` entries, see the [compound-engineering-template](https://github.com/Augmented-Dev72/compound-engineering-template) repo.
 
 ## License
 
