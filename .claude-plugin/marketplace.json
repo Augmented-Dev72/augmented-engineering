@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "augmented-engineering",
-      "source": ".",
+      "source": "./",
       "description": "Session management, memory consolidation, 8-lens code review, and system auditing. Implements compound engineering principles so every session leaves your tools better than you found them.",
       "version": "1.0.0",
       "author": {
