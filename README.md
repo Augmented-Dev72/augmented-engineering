@@ -6,7 +6,7 @@ A Claude Code plugin implementing **[compound engineering](https://every.to/chai
 
 Most engineering work generates implicit knowledge that evaporates between sessions: patterns discovered during debugging, architectural decisions made in conversation, workflows repeated manually because nobody wrote them down. Compound engineering captures that knowledge systematically. Each session ends with a structured review that identifies what should be encoded into docs, skills, hooks, or agent instructions — so the next session starts from a higher baseline.
 
-This plugin provides the session management, memory consolidation, code review, and auditing workflows that make compound engineering practical. It extends the [superpowers](https://github.com/anthropics/claude-code-superpowers) plugin with four skills and four hooks.
+This plugin provides the project bootstrapping, session management, memory consolidation, code review, and auditing workflows that make compound engineering practical. It extends the [superpowers](https://github.com/anthropics/claude-code-superpowers) plugin with five skills and four hooks.
 
 ## Prerequisites
 
@@ -58,10 +58,11 @@ git clone https://github.com/Augmented-Dev72/augmented-engineering.git ~/.claude
 
 ## What's Included
 
-### Skills (4)
+### Skills (5)
 
 | Skill              | Command               | Purpose                                                                                              |
 | ------------------ | --------------------- | ---------------------------------------------------------------------------------------------------- |
+| Compound Init      | `/compound-init`      | Bootstrap compound engineering in any project — scaffolds CLAUDE.md, agents, docs, and configuration |
 | Session Summary    | `/session-summary`    | Capture learnings to `.claude/sessions/` with a structured compound step review                      |
 | Consolidate Memory | `/consolidate-memory` | Weekly promotion of session learnings to `MEMORY.md`, with staleness pruning                         |
 | Compound Review    | `/compound-review`    | Multi-perspective code review using 8 specialized lenses (security, performance, architecture, etc.) |
@@ -166,9 +167,15 @@ The plugin reads project-specific configuration from `.compound.json` in your pr
 | `COMPOUND_SKIP_POST_EDIT`  | `0`     | Set to `1` to disable post-edit formatting/linting |
 | `COMPOUND_CONFIG_PATH`     | —       | Override `.compound.json` location                 |
 
-## Project Template
+## Quick Start
 
-For a full project setup with `.compound.json`, example CLAUDE.md, session directory structure, and recommended `.gitignore` entries, see the [augmented-engineering-template](https://github.com/Augmented-Dev72/augmented-engineering-template) repo.
+After installing the plugin, bootstrap compound engineering in any project:
+
+```
+/compound-init
+```
+
+This scaffolds `CLAUDE.md`, `.compound.json`, agent templates, documentation structure, and recommended `.gitignore` entries. The skill is idempotent — it detects existing scaffolding and warns before overwriting. After scaffolding, it walks you through customizing the TODO stubs for your project.
 
 ## Attribution
 

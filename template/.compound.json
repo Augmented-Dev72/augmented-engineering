@@ -1,0 +1,36 @@
+{
+  "postEdit": {
+    "rules": [
+      {
+        "match": "\\.(js|ts|jsx|tsx|css|html|json|md|yaml|yml)$",
+        "run": "npx prettier --write $FILE"
+      }
+    ],
+    "autoTest": {
+      "enabled": false,
+      "match": "\\.(js|ts|jsx|tsx)$",
+      "testCommand": "npx jest --testPathPattern=$TEST_FILE --bail",
+      "testDiscovery": "sibling-dir",
+      "testDirName": "__tests__",
+      "testSuffix": ".test.js"
+    }
+  },
+  "compoundReview": {
+    "baseBranch": "main",
+    "lenses": [
+      "security",
+      "performance",
+      "architecture",
+      "over-engineering",
+      "error-handling",
+      "test-quality",
+      "data-integrity",
+      "maintainability"
+    ],
+    "lensOverrides": {}
+  },
+  "cleanup": {
+    "tempFilePatterns": ["/tmp/compound-*"],
+    "pruneWorktrees": true
+  }
+}

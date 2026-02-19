@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+vendor/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compound Engineering — private/ephemeral files
+.claude/sessions/
+docs/plans/WorkingMemory.md
+CLAUDE.local.md
+
+# Build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Environment
+.env
+.env.local

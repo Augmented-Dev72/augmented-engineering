@@ -1,0 +1,38 @@
+# CLAUDE.local.md — Personal Preferences
+
+> Copy this file to `CLAUDE.local.md` (gitignored) and fill in your local details.
+
+## Environment
+
+<!-- TODO: List your local environment details -->
+<!-- Example:
+### Key Environment Aliases
+| Alias    | Purpose              | Notes                    |
+|----------|----------------------|--------------------------|
+| `dev`    | Development server   | Local Docker instance    |
+| `staging`| Staging environment  | Shared team environment  |
+-->
+
+## Workflow Preferences
+
+### Communication Style
+- Be concise — skip obvious explanations unless I ask "why"
+- When presenting options, recommend one and explain the trade-off briefly
+- For errors: show the root cause first, then the fix
+
+### Development Flow
+<!-- TODO: Describe your personal workflow -->
+<!-- Example:
+- I use VS Code with Copilot
+- I prefer working in feature branches off `main`
+- Run tests before suggesting commits
+-->
+
+### Shell Aliases
+<!-- TODO: List your personal shell aliases -->
+<!-- Example:
+| Alias  | Command              | When to use              |
+|--------|----------------------|--------------------------|
+| `dev`  | `npm run dev`        | Start dev server         |
+| `t`    | `npm test`           | Run tests                |
+-->

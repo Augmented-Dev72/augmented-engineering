@@ -1,6 +1,6 @@
 {
   "name": "augmented-engineering",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Implements compound engineering principles for Claude Code — session summaries, memory consolidation, multi-perspective code reviews, and system audits. Every session leaves your tools better than you found them.",
   "author": "Brooks Johnson",
   "homepage": "https://github.com/Augmented-Dev72/augmented-engineering",
